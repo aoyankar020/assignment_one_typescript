@@ -1,4 +1,3 @@
-// ====================== problem - 1 ============================problem - 1
 function formatString(input: string, toUpper?: boolean): string {
   let isTrue = toUpper !== false;
 
@@ -6,7 +5,6 @@ function formatString(input: string, toUpper?: boolean): string {
 }
 const data = formatString("Hello");
 
-// ====================== problem - 2 ============================
 type items = {
   title: string;
   rating: number;
@@ -24,14 +22,12 @@ function filterByRating(items: Array<items>): Array<items> {
 const result: Array<items> = filterByRating(books);
 console.log(filterByRating(result));
 
-// ====================== problem - 3 ============================
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   const result = arrays.flat();
   return result;
 }
 console.log(concatenateArrays([9, " ", 6], [0, 9, 7, 6], [0, 9, 7, 6]));
 
-// ====================== problem - 4 ============================
 class Vehicle {
   private _make: string;
   private _year: number;
@@ -57,7 +53,6 @@ const myCar = new Car("Toyota", 2020, "104E");
 let info = myCar.getInfo();
 let model = myCar.getModel();
 
-// ====================== problem - 5 ============================
 function processValue(value: string | number): number {
   let length: number = 0;
   if (typeof value === "string") {
@@ -69,7 +64,6 @@ function processValue(value: string | number): number {
 }
 console.log(processValue("2"));
 
-// ====================== problem - 6 ============================
 interface Product {
   name: string;
   price: number;
@@ -89,7 +83,6 @@ const products = [
 ];
 console.log(getMostExpensiveProduct(products));
 
-// ====================== problem - 7 ============================
 enum Day {
   Monday,
   Tuesday,
@@ -108,7 +101,6 @@ function getDayType(day: Day): string {
 }
 console.log(getDayType(Day.Friday));
 
-// ====================== problem - 8 ============================
 async function squareAsync(num: number): Promise<number> {
   if (num < 0) {
     throw new Error("Negative number not allowed");
